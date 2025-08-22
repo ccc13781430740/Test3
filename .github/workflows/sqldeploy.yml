@@ -23,7 +23,7 @@ jobs:
         vs-version: '17.0'  # Visual Studio 2022
         
     - name: Build
-      run:      msbuild ./dw1212/dw1212.sqlproj `
+      run:      msbuild ./Test3/Test3.sqlproj `
           /p:Configuration=Release `
           /p:Platform="Any CPU" `
           /nologo `
@@ -34,4 +34,4 @@ jobs:
       with:
         connection-string: 'Server=tcp:zhftest0801.sql.azuresynapse.azure.cn,1433;Initial Catalog=zhftest;Persist Security Info=False;User ID=sqladminuser;Password=P@ssw0rd!...;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         action: 'publish'
-        path: './dw1212/bin/Debug/MyDatabaseProject.dacpac'
+        path: './Test3/bin/Debug/Test3.dacpac'
